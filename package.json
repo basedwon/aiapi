@@ -1,0 +1,37 @@
+{
+  "name": "aiapi",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Basedwon <basedwon@protonmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/basedwon/aiapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/basedwon/aiapi/issues"
+  },
+  "homepage": "https://github.com/basedwon/aiapi#readme",
+  "main": "lib/aiapi.js",
+  "scripts": {
+    "dev:test": "nodemon -w ../.. -x npm test",
+    "dev": "nodemon -w ../.. test/aiapi.test.js",
+    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "update": "npm run update:prod && npm run update:dev",
+    "update:prod": "npm i -S basd@latest",
+    "update:dev": "npm i -D @basd/testr@latest",
+    "test": "testr test"
+  },
+  "dependencies": {
+    "@dqbd/tiktoken": "^1.0.7",
+    "basd": "^1.0.16",
+    "dotenv": "^16.3.1",
+    "openai": "^4.19.1"
+  },
+  "devDependencies": {
+    "@basd/testr": "^0.1.2",
+    "jsdoc": "^4.0.2",
+    "jsdoc-to-markdown": "^8.0.0"
+  },
+  "keywords": []
+}
