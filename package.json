@@ -1,6 +1,6 @@
 {
   "name": "aiapi",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A versatile library designed to interact with various AI services, including text generation, image processing, and audio conversion.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
