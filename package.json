@@ -1,7 +1,7 @@
 {
   "name": "aiapi",
   "version": "0.0.0",
-  "description": "",
+  "description": "A versatile library designed to interact with various AI services, including text generation, image processing, and audio conversion.",
   "author": "Basedwon <basedwon@protonmail.com>",
   "license": "MIT",
   "repository": {
@@ -15,15 +15,16 @@
   "main": "lib/aiapi.js",
   "scripts": {
     "dev:test": "nodemon -w ../.. -x npm test",
-    "dev": "nodemon -w ../.. test/aiapi.test.js",
-    "docs": "jsdoc2md lib/*.js > docs/api.md",
+    "dev": "nodemon -w ../.. test/tester.js",
+    "docs": "jsdoc2md \"lib/*.js\" > docs/api.md",
     "update": "npm run update:prod && npm run update:dev",
-    "update:prod": "npm i -S basd@latest",
+    "update:prod": "npm i -S basd@latest @basd/registry@latest",
     "update:dev": "npm i -D @basd/testr@latest",
     "test": "testr test"
   },
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.7",
+    "axios": "^1.6.2",
     "basd": "^1.0.16",
     "dotenv": "^16.3.1",
     "openai": "^4.19.1"
@@ -33,5 +34,36 @@
     "jsdoc": "^4.0.2",
     "jsdoc-to-markdown": "^8.0.0"
   },
-  "keywords": []
+  "keywords": [
+    "ai",
+    "artificial intelligence",
+    "machine learning",
+    "text generation",
+    "image processing",
+    "audio processing",
+    "AI API",
+    "OpenAI",
+    "Hugging Face",
+    "Stable Diffusion",
+    "API wrapper",
+    "GPT-3",
+    "deep learning",
+    "NLP",
+    "natural language processing",
+    "computer vision",
+    "speech synthesis",
+    "content generation",
+    "AI integration",
+    "AI services",
+    "AI platform",
+    "multimodal AI",
+    "adaptive AI",
+    "custom AI provider",
+    "AI provider",
+    "AI abstraction layer",
+    "AI interface",
+    "AI SDK",
+    "AI toolkit",
+    "AI utilities"
+  ]
 }
